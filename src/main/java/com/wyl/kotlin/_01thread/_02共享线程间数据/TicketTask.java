@@ -6,6 +6,14 @@ public class TicketTask implements Runnable {
 
     @Override
     public void run() {
-        while (ticket <= MAX) System.out.println(Thread.currentThread().getName() + "卖出第" + ticket++ + "张票");
+
+        while (ticket <= MAX) {
+            System.out.println(Thread.currentThread().getName() + "卖出第" + ticket++ + "张票");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

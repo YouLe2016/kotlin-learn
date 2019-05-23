@@ -1,3 +1,4 @@
+
 /*
 plugins {
     java
@@ -13,7 +14,8 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk7"))
+    implementation(kotlin("stdlib-jdk8"))
     testImplementation("junit:junit:4.12")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1")
-}*/
+}
+*/
